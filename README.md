@@ -6,7 +6,7 @@ If you own [LKMEX](https://docs.maiar.exchange/maiar-exchange-features/locked-me
 - cash out 💸  
 - or simply swap them 🔄 for `EGLD` or `MEX`  
 
-one way of doing it is by using the [lockedmex.exchange](https://lockedmex.exchange/ref/jkr) website.  
+one way of doing it is by using the [lockedmex.exchange](https://lockedmex.exchange/ref/jkr) site.  
 
 
 ## Setup
