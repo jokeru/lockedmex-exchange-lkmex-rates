@@ -1,7 +1,7 @@
 import requests
 
 
-def lkmexToTokenViaLockedmexExchange(token, balance = pow(10, 6)):
+def lkmexToTokenViaLockedmexExchange(token, balance=pow(10, 6)):
     url = "https://elrond.api.beeftech.cloud/scQuery"
     token_hex = token.encode("utf-8").hex()
     lkmex_hex = format(int(balance * pow(10, 18)), "x")
@@ -13,12 +13,12 @@ def lkmexToTokenViaLockedmexExchange(token, balance = pow(10, 6)):
     try:
         response = requests.post(url, json=parameters)
         if response.status_code != 200:
-            return(-200)
+            return -200
         data = response.json()
         token = int(data["output"][2]["bigNumber"]) / pow(10, 18)
-        return(token)
-    except:
-        return(-1)
+        return token
+    except Exception:
+        return -1
 
 
 mex = lkmexToTokenViaLockedmexExchange("MEX-455c57", 10)
